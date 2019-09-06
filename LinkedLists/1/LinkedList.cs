@@ -14,6 +14,8 @@ namespace LinkedLists
             private set;
         }
 
+        //public LinkedListNode<T> AddFirst(T value)
+        //public void AddFirst(LinkedListNode<T> node)
         public void AddFirst(T value)
         {
             LinkedListNode<T> node = new LinkedListNode<T>(value);
@@ -94,6 +96,7 @@ namespace LinkedLists
 
         public IEnumerator<T> GetEnumerator()
         {
+            //Разобрается с yield
             LinkedListNode<T> current = head;
             while (current != null)
             {
