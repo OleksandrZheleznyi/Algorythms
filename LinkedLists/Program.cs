@@ -51,6 +51,18 @@ namespace LinkedLists
 
             Console.WriteLine("Count of list items - {0}", list.Count);
 
+            list.AddFirst(8);
+            list.AddFirst(8);
+
+            foreach (int item in list)
+            {
+                Console.Write("{0} ", item);
+            }
+
+            Console.WriteLine();
+
+            Console.WriteLine("Count of list items - {0}", list.Count);
+
             list.Remove();
 
             Console.WriteLine("Count of list items - {0}", list.Count);
